@@ -1,105 +1,42 @@
-import React, { useState } from "react";
-import coinbaseWalletModule from "@web3-onboard/coinbase";
-import walletConnectModule from "@web3-onboard/walletconnect";
-import injectedModule from "@web3-onboard/injected-wallets";
-import Onboard from "@web3-onboard/core";
-// import logo1 from "../assets/recycling.jpg";
-import logo1 from "../assets/banner.jpg";
-// import { TransactionContext } from "../context/TransactionContext";
+import React from "react";
+import logo1 from "./assets/banner2.png";
+import App from './App.tsx'
 
-const coinbaseWalletSdk = coinbaseWalletModule();
-const walletConnect = walletConnectModule();
-const injected = injectedModule();
-
-const modules = [coinbaseWalletSdk, walletConnect, injected];
-
-const MAINNET_RPC_URL = "https://polygon-mainnet.g.alchemy.com/v2/odpZQIbE3xtAii8qMNePX-0M6fyB8G0V";
-const MUMBAI_RPC_URL = "https://polygon-mumbai.g.alchemy.com/v2/odpZQIbE3xtAii8qMNePX-0M6fyB8G0V";
-const RINKEBY_RPC_URL = "https://eth-rinkeby.alchemyapi.io/v2/odpZQIbE3xtAii8qMNePX-0M6fyB8G0V";
-
-const onboard = Onboard({
-  wallets: modules, // created in previous step
-  chains: [
-    {
-      id: "0x137", // chain ID must be in hexadecimel
-      token: "MATIC",
-      namespace: "evm",
-      label: "Polygon Mainnet",
-      rpcUrl: MAINNET_RPC_URL
-    },
-    {
-      id: "0x80001",
-      token: "Matic",
-      namespace: "evm",
-      label: "Mumbai Testnet",
-      rpcUrl: MUMBAI_RPC_URL
-    },
-    {
-      id: "0x4",
-      token: "rETH",
-      namespace: "evm",
-      label: "Ethereum Rinkeby Testnet",
-      rpcUrl: RINKEBY_RPC_URL
-    }
-  ],
-  appMetadata: {
-    name: "Recyclant",
-    icon: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-    description: "Recycle waste and save our enviroment",
-    recommendedInjectedWallets: [
-      { name: "Coinbase", url: "https://wallet.coinbase.com/" },
-      { name: "MetaMask", url: "https://metamask.io" }
-    ]
-  }
-});
 
 const Welcome = () => {
-  // const { currentAccount } = useContext(TransactionContext);
-  const [account, setAccount] = useState();
 
-  const connectWallet2 = async () => {
-    try {
-      const wallets = await onboard.connectWallet();
-      const { accounts, } = wallets[0];
-      setAccount(accounts[0].address);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+ return (
+    <div className="flex w-full h-screen flex-row justify-center items-center bg-blue-900 px-24 py-10">
 
-  return (
-    <div className="flex w-full mf:flex-row flex-col justify-center items-center">
-      <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 px-4">
-        <div className="flex flex-1 justify-start items-start flex-col mf:mr-10 ">
-          <h1 className="text-5xl sm:text-7xl text-white py-1 font-semibold">
-            RECYCLANT <br />
-          </h1><br />
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-4xl ">
-            Waste Recycling & Sustainability <br /> Help our Environment <br /> and get rewarded
+        <div className="flex-1 justify-start items-start flex-col mf:mr-10 ">
+          <h1 className="text-2xl sm:text-5xl text-white py-1 font-semibold">
+          Crypto Portfolio Worth <br />
+          </h1>
+          <p className="text-left mt-5 text-yellow-500 font-extrabold font-light md:w-9/12 w-11/12 text-2xl ">
+          ... track your portfolio value 
           </p><br />
-          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
-            Connect your wallet, submit details of your <br /> enviromental waste, recyclers go to the <br />  marketplaceplace  and recycle  waste close to their location...
+          <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-4xl ">
+          Track past and current worth <br /> 
+          </p><br />
+          <p className="text-justify mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
+          Imagine effortlessly monitoring your assets, analyzing market trends, and making data-driven decisions that could elevate your investment game. With Crypto Portfolio Worth, you gain access to state-of-the-art portfolio management features, real-time insights, and an engaging community of like-minded crypto enthusiasts. 
           </p><br />
           {/** {!currentAccount && ( )} */}
+          <a href="/">
           <button
             type="button"
-            onClick={connectWallet2}
-            className="flex flex-row justify-center items-center my-5 bg-green-300 p-3 rounded-full cursor-pointer hover:bg-green-800 hover:text-white"
+            onClick= {<App />}
+            className="w-4/5 flex flex-row justify-center items-center my-5 bg-green-300 p-3 rounded-full cursor-pointer hover:bg-green-800 hover:text-white"
           >
 
-            <p className="text-black text-3xl font-semibold py-3 px-10 mx-14 hover:text-white hover:text-white">
-              Connect Wallet
+            <p className="text-black text-2xl font-semibold py-1 px-2 mx-10 hover:text-white ">
+              Get Started
             </p>
           </button>
-
-          <div className="text-white text-2xl font-semibold mx-4 my-5 ">
-            <div>Connected Wallet Address: <br /> {account}</div>
-          </div>
-
+          </a>
         </div>
-      </div>
-      <div className="sm:flex-[0.9] lg:flex-[0.9]flex-initial justify-left items-center">
+     
+      <div className="flex-1 justify-left items-center">
 
         <img src={logo1} alt="welcome" className="w-100 cursor-pointer" />
       </div>
