@@ -22,7 +22,7 @@ const Welcome = () => {
           Imagine effortlessly monitoring your assets, analyzing market trends, and making data-driven decisions that could elevate your investment game. With Crypto Portfolio Worth, you gain access to state-of-the-art portfolio management features, real-time insights, and an engaging community of like-minded crypto enthusiasts. 
           </p><br />
           {/** {!currentAccount && ( )} */}
-          <a href="/app">
+          <a href="/app/">
           <button
             type="button"
             onClick= {<App />}
