@@ -3,21 +3,18 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 import App from './App.tsx'
 import Welcome from './Welcome.jsx'
+import Transaction from './Transaction.jsx'
+import Pyusd from './Pyusd.jsx'
 import './index.css'
-
-
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-     <BrowserRouter>
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={ <Welcome />} />
       <Route path="app" element={<App />} />
-      {/**
-      <Route path="about" element={<About />} />
-      <Route path="create" element={<Create />} />
-      <Welcome />
-      */}
+      <Route path="transaction" element={<Transaction />} />
+      <Route path="pyusd" element={<Pyusd />} />
     </Routes>
     </BrowserRouter>
    

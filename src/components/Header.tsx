@@ -2,8 +2,65 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-blue-600 text-white text-center py-4 shadow-lg">
-      <h1 className="text-3xl font-bold">Crypto Portfolio Worth</h1>
+    <header className="bg-blue-600 flex flex-row text-white text-center py-4 px-24 shadow-lg">
+      <h1 className="basis-3/7 py-2 text-3xl font-bold ml-7 mr-10">Crypto Portfolio Worth</h1>
+
+    <div className="basis-1/7">
+    <a href="/">
+          <button
+            type="button"
+            className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
+          >
+
+            <p className="text-black text-lg font-semibold py-1 px-2 mx-10 hover:text-white ">
+              HOME
+            </p>
+          </button>
+          </a>
+    </div>
+
+    <div className="basis-1/7">
+    <a href="/app">
+          <button
+            type="button"
+            className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
+          >
+
+            <p className="text-black text-lg font-semibold py-1 px-2 mx-10 hover:text-white ">
+              APP
+            </p>
+          </button>
+          </a>
+    </div>
+
+    <div className="basis-1/7">
+    <a href="/pyusd">
+          <button
+            type="button"
+            className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
+          >
+
+            <p className="text-black text-lg font-semibold py-1 px-2 mx-10 hover:text-white ">
+              PYUSD
+            </p>
+          </button>
+          </a>
+    </div>
+ 
+    <div className="basis-1/7">
+    <a href="/transaction">
+          <button
+            type="button"
+            className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
+          >
+
+            <p className="text-black text-lg font-semibold py-1 px-2 mx-10 hover:text-white ">
+              TRANSACTION
+            </p>
+          </button>
+          </a>
+    </div>
+
     </header>
   );
 };
