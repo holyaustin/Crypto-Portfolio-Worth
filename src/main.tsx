@@ -9,12 +9,12 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter>Rollup-plugin-node-resolve
     <Routes>
       <Route path="/" element={ <Welcome />} />
-      <Route path="app" element={<App />} />
-      <Route path="transaction" element={<Transaction />} />
-      <Route path="pyusd" element={<Pyusd />} />
+      <Route path="/app" element={<App />} />
+      <Route path="/transaction" element={<Transaction />} />
+      <Route path="/pyusd" element={<Pyusd />} />
     </Routes>
     </BrowserRouter>
    

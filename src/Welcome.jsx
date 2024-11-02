@@ -1,6 +1,6 @@
 import React from "react";
 import logo1 from "./assets/banner2.png";
-//import App from './App/App.tsx'
+import { Link } from "react-router-dom";
 
 
 const Welcome = () => {
@@ -21,8 +21,9 @@ const Welcome = () => {
           <p className="text-justify mt-5 text-white font-light md:w-9/12 w-11/12 text-2xl">
           Imagine effortlessly monitoring your assets, analyzing market trends, and making data-driven decisions that could elevate your investment game. With Crypto Portfolio Worth, you gain access to state-of-the-art portfolio management features, real-time insights, and an engaging community of like-minded crypto enthusiasts. 
           </p><br />
-          {/** {!currentAccount && ( )} */}
-          <a href="/app">
+          {/** {!currentAccount && ( )} 
+          <a href="/app">*/}
+          <Link to="/app">
           <button
             type="button"
            
@@ -33,7 +34,7 @@ const Welcome = () => {
               Get Started
             </p>
           </button>
-          </a>
+          </Link>
         </div>
      
       <div className="flex-1 justify-left items-center">
