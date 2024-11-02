@@ -9,7 +9,7 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <BrowserRouter>Rollup-plugin-node-resolve
+    <BrowserRouter>
     <Routes>
       <Route path="/" element={ <Welcome />} />
       <Route path="/app" element={<App />} />

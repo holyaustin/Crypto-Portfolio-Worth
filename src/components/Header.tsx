@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
@@ -6,8 +7,8 @@ const Header: React.FC = () => {
       <h1 className="basis-3/7 py-2 text-3xl font-bold ml-7 mr-10">Crypto Portfolio Worth</h1>
 
     <div className="basis-1/7">
-    <a href="/">
-          <button
+    <Link to="/">
+        <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
           >
@@ -16,11 +17,11 @@ const Header: React.FC = () => {
               HOME
             </p>
           </button>
-          </a>
+          </Link>
     </div>
 
     <div className="basis-1/7">
-    <a href="/app">
+    <Link to="/app">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
@@ -30,11 +31,11 @@ const Header: React.FC = () => {
               APP
             </p>
           </button>
-          </a>
+          </Link>
     </div>
 
     <div className="basis-1/7">
-    <a href="/pyusd">
+    <Link to="/pyusd">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
@@ -44,11 +45,11 @@ const Header: React.FC = () => {
               PYUSD
             </p>
           </button>
-          </a>
+          </Link>
     </div>
  
     <div className="basis-1/7">
-    <a href="/transaction">
+    <Link to="/transaction">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
@@ -58,7 +59,7 @@ const Header: React.FC = () => {
               TRANSACTION
             </p>
           </button>
-          </a>
+          </Link>
     </div>
 
     </header>
