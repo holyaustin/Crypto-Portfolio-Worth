@@ -8,8 +8,11 @@ const Transaction = () => {
  return (
     <div className="w-full  bg-white ">
 <Header />
-<h1 className="text-2xl sm:text-5xl text-black py-1 font-semibold">
+<h1 className="text-center text-2xl sm:text-5xl text-black py-10 font-semibold">
 Transactions </h1>
+
+<h1 className="text-center text-2xl sm:text-5xl text-black py-10 font-semibold">
+Coming Soon </h1>
 
     </div>
   );

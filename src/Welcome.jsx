@@ -12,7 +12,7 @@ const Welcome = () => {
           <h1 className="text-2xl sm:text-5xl text-white py-1 font-semibold">
           Crypto Portfolio Worth <br />
           </h1>
-          <p className="text-left mt-5 text-yellow-500 font-extrabold font-light md:w-9/12 w-11/12 text-2xl ">
+          <p className="text-left mt-5 text-yellow-500 font-extrabold md:w-9/12 w-11/12 text-2xl ">
           ... track your portfolio value 
           </p><br />
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-4xl ">
