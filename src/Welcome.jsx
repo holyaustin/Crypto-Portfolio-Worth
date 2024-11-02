@@ -1,6 +1,6 @@
 import React from "react";
 import logo1 from "./assets/banner2.png";
-import App from './App.tsx'
+//import App from './App/App.tsx'
 
 
 const Welcome = () => {
@@ -22,10 +22,10 @@ const Welcome = () => {
           Imagine effortlessly monitoring your assets, analyzing market trends, and making data-driven decisions that could elevate your investment game. With Crypto Portfolio Worth, you gain access to state-of-the-art portfolio management features, real-time insights, and an engaging community of like-minded crypto enthusiasts. 
           </p><br />
           {/** {!currentAccount && ( )} */}
-          <a href="/app/">
+          <a href="/app">
           <button
             type="button"
-            onClick= {<App />}
+           
             className="w-4/5 flex flex-row justify-center items-center my-5 bg-green-300 p-3 rounded-full cursor-pointer hover:bg-green-800 hover:text-white"
           >
 

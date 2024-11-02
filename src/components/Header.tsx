@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     </div>
 
     <div className="basis-1/7">
-    <a href="/app/">
+    <a href="/app">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
     </div>
 
     <div className="basis-1/7">
-    <a href="/pyusd/">
+    <a href="/pyusd">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
     </div>
  
     <div className="basis-1/7">
-    <a href="/transaction/">
+    <a href="/transaction">
           <button
             type="button"
             className=" mx-2 bg-green-600 p-1 cursor-pointer hover:bg-blue-800 hover:text-white"

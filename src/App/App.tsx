@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import Header from "./components/Header";
-import PortfolioInput from "./components/PortfolioInput";
-import PortfolioSummary from "./components/PortfolioSummary";
-import HistoricalChart from "./components/HistoricalChart";
-import PortfolioPieChart from "./components/PortfolioPieChart";
-import PortfolioControls from "./components/PortfolioControls";
-import { fetchAssets } from "./services/cryptoAPI";
-import { Asset, PortfolioHolding, HistoricalDataEntry } from "./interfaces";
+import Header from "../components/Header";
+import PortfolioInput from "../components/PortfolioInput";
+import PortfolioSummary from "../components/PortfolioSummary";
+import HistoricalChart from "../components/HistoricalChart";
+import PortfolioPieChart from "../components/PortfolioPieChart";
+import PortfolioControls from "../components/PortfolioControls";
+import { fetchAssets } from "../services/cryptoAPI";
+import { Asset, PortfolioHolding, HistoricalDataEntry } from "../interfaces";
 import {
   addHolding,
   updateHolding,
@@ -15,7 +15,7 @@ import {
   fetchPortfolioData,
   fetchTotalPortfolioValue,
   handleExportCSV,
-} from "./utils/portfolioUtils";
+} from "../utils/portfolioUtils";
 
 import CircularProgress from "@mui/material/CircularProgress";
 

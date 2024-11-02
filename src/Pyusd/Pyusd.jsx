@@ -1,7 +1,7 @@
 import React from "react";
 //import logo1 from "./assets/banner2.png";
 //import App from './App.tsx'
-import Header from "./components/Header";
+import Header from "../components/Header";
 
 
 const Pyusd = () => {
